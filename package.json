@@ -8,7 +8,9 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "db:types": "supabase gen types typescript --local > src/integrations/supabase/types.ts",
+    "db:reset": "supabase db reset --local"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
